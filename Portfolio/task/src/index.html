@@ -1,52 +1,112 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Simple Page</title>
-    <link rel="stylesheet" href="css/style.css"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
-    <h1>Peter Stackebrandt</h1>
-    <nav>
-        <a href="#about">About</a> |
-        <a href="#portfolio">Portfolio</a> |
-        <a href="#contacts">Contacts</a> |
+    <nav class="desktop-nav">
+        <h1>Feztix</h1>
+        <a href="#about">About me</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contacts">Contacts</a>
+        <button class="hamburger" ><img id="ham-icon" src="menu.svg" width="24" height="24"></button>
     </nav>
+    <ul class="menu" style="display: none;">
+        <li><a href="#about">About me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+    </ul>
+    <h1 id="name">Feztix</h1>
 </header>
-<h2>About me</h2>
-<img src="images/Peter_Foto_2020_Foto-Hesse.jpg" alt="Peter's portrait" height="400" width="300"/>
 <section id="about">
-    <p>Hi, I'm Feztix. I am a student</p>
-    <p>For me, programming is a job I like very much.</p>
-    <p>I like to learn new knowledge. I like to study new technologies and apply them in practice.</p>
+    <img id="representation-img" src="representation.jpg" alt="Profile photo">
+    <div>
+        <h2 class="shadow">About me</h2>
+        <p>Значимость этих проблем настолько очевидна, что дальнейшее развитие
+            различных форм деятельности обеспечивает широкому кругу
+            (специалистов) участие в формировании новых предложений.
+            Равным образом консультация с широким активом требуют
+            определения и уточнения модели развития. Равным образом консультация
+            с широким активом требуют определения и уточнения модели развития.
+        </p>
+    </div>
 </section>
-<p>
-    <em>Skills:</em><br>
-<ul>
-    <li>SecAdm</li>
-    <li>Risk Assessment</li>
-    <li>Control Operations</li>
-</ul>
-
 <section id="portfolio">
-    <h2>Portfolio</h2>
-    <p>(current training)</p>
-    <h3>Services</h3>
-    <h3>Web</h3>
+    <h2 class="shadow">Portfolio</h2>
+    <ul>
+        <li class="portfolio-item">
+            <div class="text">
+                <h3 class="name shadow">Punch-Drunk Love</h3>
+                <p class="description">A frustrated Barry Egan calls a phone-sex line to curb his loneliness. Little does he know that he will land in huge trouble and will also jeopardise his relationship with Lena.</p>
+                <button class="open-window">More</button>
+            </div>
+            <a href="https://www.imdb.com/title/tt0272338/?ref_=ttpl_pl_tt">
+                <img class="picture" src="portfolio1.jpg" alt="Punch-Drunk Love"/>
+            </a>
+            <div class="window">
+                <div class="window-content">
+                    <h3>Punch-Drunk Love</h3>
+                    <p>You can see the project at the following link
+                        <a href="https://www.imdb.com/title/tt0272338/?ref_=ttpl_pl_tt">Punch-Drunk Love</a></p>
+                    <p>A frustrated Barry Egan calls a phone-sex line to curb his loneliness. Little does he know that he will land in huge trouble and will also jeopardise his relationship with Lena.</p>
+                    <button class="close-window">Close</button>
+                </div>
+            </div>
+        </li>
+        <li class="portfolio-item">
+            <div class="text">
+                <h3 class="name shadow">Magnolia</h3>
+                <p class="description">An epic mosaic of interrelated characters in search of love, forgiveness, and meaning in the San Fernando Valley.</p>
+                <button class="open-window">More</button>
+            </div>
+            <a href="https://www.imdb.com/title/tt0175880/?ref_=ttmi_tt">
+                <img class="picture" src="portfolio2.jpg" alt="Magnolia"/>
+            </a>
+            <div class="window">
+                <div class="window-content">
+                    <h3>Magnolia</h3>
+                    <p>You can see the project at the following link
+                        <a href="https://www.imdb.com/title/tt0175880/?ref_=ttmi_tt">Magnolia</a></p>
+                    <p>An epic mosaic of interrelated characters in search of love, forgiveness, and meaning in the San Fernando Valley.</p>
+                    <button class="close-window">Close</button>
+                </div>
+            </div>
+        </li>
+        <li class="portfolio-item">
+            <div class="text">
+                <h3 class="name shadow">There Will Be Blood</h3>
+                <p class="description">A story of family, religion, hatred, oil and madness, focusing on a turn-of-the-century prospector in the early days of the business.</p>
+                <button class="open-window">More</button>
+            </div>
+            <a href="https://www.imdb.com/title/tt0469494/?ref_=ttpl_pl_tt">
+                <img class="picture" src="portfolio3.jpg" alt="There Will Be Blood"/>
+            </a>
+            <div class="window">
+                <div class="window-content">
+                    <h3>There Will Be Blood</h3>
+                    <p>You can see the project at the following link
+                        <a href="https://www.imdb.com/title/tt0469494/?ref_=ttpl_pl_tt">There Will Be Blood</a></p>
+                    <p>A story of family, religion, hatred, oil and madness, focusing on a turn-of-the-century prospector in the early days of the business.</p>
+                    <button class="close-window">Close</button>
+                </div>
+            </div>
+        </li>
+    </ul>
+
 </section>
-<div>
-    <img alt='Screenshot of web project "flashcard"' src="images/project1.png" height="400" width="800"/>
-    <p class="image-title">web project "flashcard" (HTML, CSS)</p>
-</div>
-<h3>Kotlin</h3>
-<div>
-    <p class="image-title">Tik-tak-toe</p>
-</div>
+<section id="contacts">
+    <h2>Contacts</h2>
+    <a class="sm" href="https://github.com/feztix"><img src="github.svg" alt="github" width="50px"></a>
+    <a class="sm" href="https://vk.com/id96222243"><img src="vk.svg" alt="vk" width="50px"></a>
+</section>
 <footer>
-    <section id="contacts">
-        <p>Author: Feztix</p>
-        <p><a href="mailto:peter.stackebrandt@gmail.com">spamfeztix@mail.ru</a></p>
-    </section>
+    I'm eating scrambled eggs right now.
 </footer>
+<script src="main.js"></script>
 </body>
 </html>
